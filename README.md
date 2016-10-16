@@ -1,2 +1,19 @@
 # DS
-adding element at first position in array
+#include <stdio.h>
+void main()
+{   int a,n,i,arr[20];
+    printf("how many elements you want to enter in the array \n");
+    scanf("%d",&n);
+    printf("eneter the elements of array\n");
+    for (i=1;i<=n;i++)
+        scanf("%d",&arr[i]);
+    printf("enter the element you want to enter at the first location\n");
+    scanf("%d",&a);
+     for (i=n;i<=0;i--)
+     {arr[i+1]=arr[i];}
+      arr[0]=a;
+      n++;
+      for (i=0;i<n;i++)
+      printf("%d\t",arr[i]);
+      getch();
+}
