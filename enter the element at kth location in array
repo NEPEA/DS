@@ -1,0 +1,21 @@
+#include <stdio.h>
+void main()
+{   int k,a,n,i,arr[20];
+    printf("how many elements you want to enter in the array \n");
+    scanf("%d",&n);
+    printf("enter the elements of array\n");
+    for (i=1;i<=n;i++)
+        scanf("%d",&arr[i]);
+        printf("eneter the position at which you want to enter the data element\n");
+        scanf("%d",&k);
+        printf("enter the value of data element\n");
+        scanf("%d",&a);
+    printf("after entering the data element of array at kth location \n");
+    for (i=n+1;i>=k;i--)
+     {arr[i+1]=arr[i];}
+     arr[k]=a;
+     n++;
+     for (i=1;i<=n;i++)
+      printf("%d\t",arr[i]);
+      getch();
+}
