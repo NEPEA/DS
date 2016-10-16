@@ -4,11 +4,11 @@ void main()
     printf("how many elements you want to enter in the array \n");
     scanf("%d",&n);
     printf("eneter the elements of array\n");
-    for (i=1;i<=n;i++)
+    for (i=0;i<=n-1;i++)
         scanf("%d",&arr[i]);
     printf("enter the element you want to enter at the first location\n");
     scanf("%d",&a);
-     for (i=n;i<=0;i--)
+     for (i=n;i>=0;i--)
      {arr[i+1]=arr[i];}
       arr[0]=a;
       n++;
