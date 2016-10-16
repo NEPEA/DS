@@ -1,4 +1,3 @@
-# DS
 #include <stdio.h>
 void main()
 {   int a,n,i,arr[20];
